@@ -1,80 +1,37 @@
-﻿annotated-doc==0.0.4
-annotated-types==0.7.0
-anyio==4.12.1
-beautifulsoup4==4.14.3
-certifi==2026.2.25
-charset-normalizer==3.4.4
-click==8.3.1
-colorama==0.4.6
-defusedxml==0.7.1
-Deprecated==1.3.1
-distro==1.9.0
-dnspython==2.8.0
-email-validator==2.3.0
 fastapi==0.111.0
-fastapi-cli==0.0.24
-filelock==3.24.3
-fonttools==4.61.1
-fpdf2==2.8.7
-fsspec==2026.2.0
-h11==0.16.0
-hf-xet==1.3.2
-httpcore==1.0.9
-httptools==0.7.1
-httpx==0.28.1
-huggingface_hub==1.5.0
-idna==3.11
-ImageIO==2.37.2
-img2pdf==0.5.1
-Jinja2==3.1.6
-jiter==0.13.0
-lazy_loader==0.4
-lxml==6.0.2
-markdown-it-py==4.0.0
-MarkupSafe==3.0.3
-mdurl==0.1.2
-mobile_sam @ git+https://github.com/ChaoningZhang/MobileSAM.git@b01a9ccef3b9e10b099b544efe004d0871802c3b
-mpmath==1.3.0
-networkx==3.6.1
-numpy==1.26.4
-openai==2.24.0
-opencv-python-headless==4.9.0.80
-orjson==3.11.7
-packaging==26.0
-pikepdf==10.3.0
-pillow
-pydantic==2.12.5
-pydantic_core==2.41.5
-Pygments==2.19.2
-python-dotenv==1.2.1
-python-multipart==0.0.9
-PyYAML==6.0.3
-reportlab==4.4.10
-requests==2.32.5
-rich==14.3.3
-rich-toolkit==0.19.7
-safetensors==0.7.0
-scikit-image==0.23.2
-scipy
-shellingham==1.5.4
-sniffio==1.3.1
-soupsieve==2.8.3
-starlette==0.37.2
-sympy==1.14.0
-tifffile==2026.2.24
-timm==0.9.16
-torch==2.10.0
-torchvision==0.25.0
-tqdm==4.67.3
-typer==0.24.1
-typing-inspection==0.4.2
-typing_extensions==4.15.0
-uharfbuzz==0.53.3
-ujson==5.11.0
-urllib3==2.6.3
 uvicorn==0.29.0
-watchfiles==1.1.1
-websockets==16.0
-wrapt==2.1.1
+python-multipart==0.0.9
+pydantic==2.12.5
+python-dotenv==1.2.1
 
+# OpenAI — keep on v1.x (v2 has breaking API changes)
+openai==1.35.0
 
+# Image processing
+pillow
+opencv-python-headless==4.9.0.80
+scikit-image==0.23.2
+numpy==1.26.4
+
+# PDF
+reportlab==4.4.10
+fpdf2==2.8.7
+pikepdf==10.3.0
+img2pdf==0.5.1
+
+# MobileSAM — CPU only torch to stay within memory limits
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
+timm==0.9.16
+mobile_sam @ git+https://github.com/ChaoningZhang/MobileSAM.git@b01a9ccef3b9e10b099b544efe004d0871802c3b
+
+# Misc
+requests==2.32.5
+beautifulsoup4==4.14.3
+uharfbuzz==0.53.3
+huggingface_hub==1.5.0
+safetensors==0.7.0
+tqdm==4.67.3
+httpx==0.28.1
+orjson==3.11.7
