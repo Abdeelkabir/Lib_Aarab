@@ -5,7 +5,7 @@ pydantic==2.12.5
 python-dotenv==1.2.1
 
 # OpenAI — keep on v1.x (v2 has breaking API changes)
-openai==1.35.0
+openai==2.24.0
 
 # Image processing
 pillow
